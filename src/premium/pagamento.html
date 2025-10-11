@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumino - Pagamento Premium</title>
+  <link rel="stylesheet" href="../css/premium.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="fade-in">
+  <header class="topo">
+    <img src="../assets/Logo.png" alt="Logo Lumino" class="logo-premium">
+  </header>
+
+  <main class="conteudo">
+    <h2>Finalizar Pagamento</h2>
+    <div class="card-pagamento">
+      <h3>Pagamento seguro Lumino</h3>
+      <p>Simulação de tela de pagamento — insira os dados fictícios abaixo.</p>
+
+      <form id="formPagamento">
+        <input type="text" placeholder="Nome no cartão" required>
+        <input type="text" placeholder="Número do cartão" maxlength="16" required>
+        <input type="text" placeholder="Validade (MM/AA)" maxlength="5" required>
+        <input type="text" placeholder="CVV" maxlength="3" required>
+        <button type="submit" class="btn-laranja">Confirmar pagamento</button>
+      </form>
+    </div>
+
+    <button onclick="voltarPlanos()" class="btn-cinza">Cancelar</button>
+  </main>
+
+  <script src="../js/premium.js"></script>
+</body>
+</html>

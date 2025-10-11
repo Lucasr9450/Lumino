@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff7f0 0%, #ffffff 100%);
+  color: #333;
+}
+  
+  header {
+    background-color: #ff7300;
+    color: white;
+    padding: 25px 40px;
+  }
+  
+  .topo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .header-esquerda .slogan {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .header-direita {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .pesquisar {
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pesquisar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .avatar {
+    background: #ddd;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+  }
+  
+  .mensagem {
+    background: white;
+    color: #ff7300;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .mensagem:hover {
+    background: #ffe5cc;
+  }
+  
+  .header-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; 
+    min-width: 250px;
+  }
+  
+  .logo-centro img {
+    max-width: 180px;
+    margin-top: -110px;
+  }
+  
+  .menu {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .cursos {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .cursos button {
+    background: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .calendar {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .calendar-header button {
+    background: #ff7300;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar th {
+    color: #ff7300;
+  }
+  
+  .calendar td {
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .calendar td:hover {
+    background: #ffe5cc;
+    cursor: pointer;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 40px 40px;
+  }
+  
+  .info-box {
+    background: #fff;
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    line-height: 1.5;
+  }
+  
+  .info-box h3 {
+    color: #ff7300;
+    margin-bottom: 10px;
+  }
+  
+  .btn-premium {
+    background: #ff7300;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 14px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .motivacional {
+    text-align: center;
+    padding: 20px;
+    background: #ff7300;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    margin: 20px 40px;
+  }
+  
+  .raposa-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .raposa-area img {
+    width: 180px;
+    height: auto;
+  }
+  
+  .info-dupla {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .coluna-esquerda,
+  .coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+  }
+  
+  .coluna-esquerda .motivacional {
+    margin: 0;
+  }
+  
+  .coluna-esquerda .raposa-area {
+    margin-bottom: 0;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-center img {
+    max-width: 155px;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 5px;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8rem;
+    background-color: #222;
+    color: #ccc;
+  }  

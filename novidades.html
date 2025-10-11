@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumino Acadêmico - Novidades</title>
+  <link rel="stylesheet" href="./src/css/novidades.css">
+</head>
+<body class="fade-in">
+
+    <header>
+        <div class="topo-header">
+          <section class="header-esquerda">
+            <h1 class="slogan">Acenda o seu amanhã</h1>
+          </section>
+      
+          <section class="header-direita">
+            <div class="pesquisar">
+              <input type="text" placeholder="Pesquisar cursos...">
+              🔍
+            </div>
+            <div class="avatar">
+              <div class="mensagem">
+                💬
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="header-centro">
+          <div class="logo-centro">
+            <img src="./src/assets/Logo.png" alt="Logo Lumino">
+          </div>
+      
+          <nav class="menu">
+            <a href="./home.html">Home</a>
+            <a href="./src/cursos/selecao.html">Cursos</a>
+            <a href="./novidades.html">Novidades</a>
+            <a href="./src/premium/premium.html">Premium</a>
+          </nav>
+        </section>
+      </header>
+
+  <main class="conteudo">
+    <h2>Últimas Novidades</h2>
+
+    <div class="filtro-novidades">
+      <button onclick="filtrarNoticias('todos')" class="btn-filtro">Todos</button>
+      <button onclick="filtrarNoticias('emprego')" class="btn-filtro">Emprego</button>
+      <button onclick="filtrarNoticias('curso')" class="btn-filtro">Curso</button>
+    </div>
+
+    <div class="noticias">
+      <div class="card-noticia curso">
+        <h3>Nova trilha de cursos em IA</h3>
+        <p>Explore os fundamentos da inteligência artificial com nossa nova trilha de aprendizado.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+      <div class="card-noticia curso">
+        <h3>Certificados atualizados</h3>
+        <p>Agora os certificados incluem QR Code e validação digital para maior segurança.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+      <div class="card-noticia curso">
+        <h3>Curso de UX Design disponível</h3>
+        <p>Aprenda sobre experiência do usuário com especialistas do mercado.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+      <div class="card-noticia emprego">
+        <h3>Nova parceria com universidades</h3>
+        <p>Alunos terão acesso a conteúdos exclusivos de instituições renomadas.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+      <div class="card-noticia emprego">
+        <h3>App Lumino disponível</h3>
+        <p>Baixe o app oficial e acompanhe seus cursos diretamente do celular.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+      <div class="card-noticia emprego">
+        <h3>Vagas de estágio abertas</h3>
+        <p>Empresas parceiras estão recrutando alunos Lumino para áreas de tecnologia.</p>
+        <a href="#">Leia mais</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>Lumino — Acenda o seu amanhã.</p>
+      <div class="footer-socials">
+        <i class="fab fa-instagram icon-instagram"></i>
+        <i class="fab fa-linkedin icon-linkedin"></i>
+        <i class="fab fa-youtube icon-youtube"></i>
+        <i class="fab fa-twitter icon-twitter"></i>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <img src="./src/assets/Logo.png" alt="logo">
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li>Suporte - </li>
+        <li>Central de ajuda</li>
+        <li>Contato</li>
+        <li>Privacidade</li>
+        <li>Termos de uso</li>
+        <li>Sobre nós</li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>©2025 Lumino. Todos os direitos reservados.</p>
+  </div>
+
+  <script>
+    function filtrarNoticias(categoria) {
+      const cards = document.querySelectorAll('.card-noticia');
+
+      cards.forEach(card => {
+        if (categoria === 'todos') {
+          card.style.display = 'block';
+        } else {
+          card.style.display = card.classList.contains(categoria) ? 'block' : 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

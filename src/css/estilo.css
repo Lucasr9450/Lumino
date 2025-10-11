@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff7f0 0%, #ffffff 100%);
+  color: #333;
+}
+
+header {
+  background-color: #ff6b00;
+  text-align: center;
+  padding: 20px;
+}
+header img {
+  max-width: 650px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+.intro-content {
+  max-width: 600px;
+}
+.intro h1 {
+  font-size: 2.5rem;
+  color: #ff6b00;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.intro p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+.btn-cadastrar {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-cadastrar:hover {
+  background-color: #e45f00;
+  transform: scale(1.05);
+}
+.login-text {
+  margin-top: 10px;
+  color: #555;
+}
+.login-text a {
+  color: #ff6b00;
+  text-decoration: none;
+  font-weight: 600;
+}
+.intro-image img {
+  width: 300px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.carrossel {
+  text-align:end;
+  padding: 300px 20px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  margin: 40px 10%;
+}
+
+.info {
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.titulo-sobre {
+  color: #ff6b00;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.sobre {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px 25px;
+  margin-top: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeInUp 1.4s ease forwards;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.titulo-historia {
+  color: #ff6b00;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.historia {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px 25px;
+  margin-top: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeInUp 1.4s ease forwards;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.avaliacoes {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.avaliacoes h2 {
+  font-size: 1.8em;
+  color: #ff7a00;
+  margin-bottom: 25px;
+}
+.avaliacao {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  border-left: 5px solid #ff7a00;
+  transition: transform 0.2s ease;
+}
+.avaliacao:hover {
+  transform: translateY(-3px);
+}
+.perfil{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 15px;
+}
+.avaliacao h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+.avaliacao .nota {
+  color: #ff7a00;
+  font-weight: bold;
+}
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+.btn-comentario {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-comentario:hover {
+  background-color: #e56b00;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 10%;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+.footer-center img {
+  max-width: 155px;
+}
+.footer-right {
+  text-align: right;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 5px;
+}
+.copyright {
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8rem;
+  background-color: #222;
+  color: #ccc;
+}

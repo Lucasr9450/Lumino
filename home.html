@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumino Acadêmico — Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./src/css/home.css">
+  <script src="./src/js/home.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="topo-header">
+          <section class="header-esquerda">
+            <h1 class="slogan">Acenda o seu amanhã</h1>
+          </section>
+      
+          <section class="header-direita">
+            <div class="pesquisar">
+              <input type="text" placeholder="Pesquisar cursos...">
+              🔍
+            </div>
+            <div class="avatar">
+              <div class="mensagem">
+                💬
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="header-centro">
+          <div class="logo-centro">
+            <img src="./src/assets/Logo.png" alt="Logo Lumino">
+          </div>
+      
+          <nav class="menu">
+            <a href="./home.html">Home</a>
+            <a href="./src/cursos/selecao.html">Cursos</a>
+            <a href="./novidades.html">Novidades</a>
+            <a href="./src/premium/premium.html">Premium</a>
+          </nav>
+        </section>
+      </header>
+
+  <section class="conteudo">
+    <div class="cursos">
+      <h2>Cursos inscritos</h2>
+        <p>Curso 1 <button>Continuar</button></p>
+        <p>Curso 2 <button>Continuar</button></p>
+        <p>Curso 3 <button>Continuar</button></p>
+    </div>
+
+    <div class="calendar">
+        <h2>Calendário do aluno</h2>
+      <div class="calendar-header">
+        <button id="prevMonth">◀</button>
+        <h3 id="monthYear"></h3>
+        <button id="nextMonth">▶</button>
+      </div>
+      <table id="calendarTable">
+        <thead>
+          <tr>
+            <th>Dom</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+            <th>Sáb</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="info-dupla">
+
+    <div class="coluna-esquerda">
+      <div class="info-box">
+        <h3>Assinatura Premium</h3>
+        <p>Conheça nossos benefícios exclusivos e impulsione seus estudos com planos acessíveis!</p>
+        <a href="./src/premium/premium.html" class="btn-premium">Saiba Mais</a>
+      </div>
+  
+      <div class="motivacional">
+        Você está com uma sequência de <strong>15 dias seguidos</strong> de aprendizado! Continue assim! 🔥
+      </div>
+  
+      <div class="raposa-area">
+        <img src="./src/assets/soninho.png" alt="Raposa Lumino">
+      </div>
+    </div>
+  
+    <div class="coluna-direita">
+      <div class="info-box">
+        <h3>Sobre o site</h3>
+         <p>
+          O <strong>Lumino Acadêmico</strong> é uma plataforma digital de aprendizado voltada para cursos técnicos e de qualificação profissional.
+          Nosso principal objetivo é <strong>facilitar o acesso à educação de qualidade</strong>, especialmente para jovens e adultos das regiões
+          Norte e Nordeste do Brasil, oferecendo uma experiência simples, moderna e acessível.
+        </p>
+        <p>
+         No Lumino, você encontra cursos em diversas áreas, aprende no seu ritmo e conquista certificados reconhecidos que ampliam
+         suas oportunidades no mercado de trabalho. Acreditamos que <strong>a educação é a luz que transforma o futuro</strong>.
+        </p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Nossa história</h3>
+          <p>
+            A ideia do <strong>Lumino Acadêmico</strong> nasceu em 2023, quando um grupo de estudantes e professores percebeu uma grande
+            desigualdade de acesso à educação técnica nas regiões mais distantes do país. Inspirados pela palavra
+            <em>“lumino”</em> — que significa <strong>luz e conhecimento</strong> —, decidiram criar uma plataforma que iluminasse
+            novos caminhos.
+          </p>
+    
+          <p>
+            O projeto começou pequeno, com poucos cursos e uma equipe voluntária, mas rapidamente ganhou destaque pela
+            <strong>qualidade dos conteúdos</strong> e o <strong>impacto social</strong>. Hoje, o Lumino é símbolo de inclusão e
+            transformação, unindo <strong>educação, tecnologia e futuro</strong> em um só lugar.
+          </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      <p>Lumino — Acenda o seu amanhã.</p>
+      <div class="footer-socials">
+        <i class="fab fa-instagram icon-instagram"></i>
+        <i class="fab fa-linkedin icon-linkedin"></i>
+        <i class="fab fa-youtube icon-youtube"></i>
+        <i class="fab fa-twitter icon-twitter"></i>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <img src="./src/assets/Logo.png" alt="logo">
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li>Suporte - </li>
+        <li>Central de ajuda</li>
+        <li>Contato</li>
+        <li>Privacidade</li>
+        <li>Termos de uso</li>
+        <li>Sobre nós</li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>©2025 Lumino. Todos os direitos reservados.</p>
+  </div>
+
+</body>
+</html>

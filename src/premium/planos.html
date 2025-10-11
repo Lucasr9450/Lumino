@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumino - Planos Premium</title>
+  <link rel="stylesheet" href="../css/premium.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="fade-in">
+  <header class="topo">
+    <img src="../assets/Logo.png" alt="Logo Lumino" class="logo-premium">
+  </header>
+
+  <main class="conteudo">
+    <h2>Criar conta premium</h2>
+    <h3>Escolha seu plano</h3>
+
+    <div class="opcoes">
+      <div class="card">
+        <h3>Anual</h3>
+        <p>R$199,90 / ano</p>
+        <button onclick="irParaPagamento('Anual')" class="btn-laranja">Escolher</button>
+      </div>
+
+      <div class="card ">
+        <h3>Mensal</h3>
+        <p>R$24,90 / mês</p>
+        <button onclick="irParaPagamento('Mensal')" class="btn-laranja">Escolher</button>
+      </div>
+
+      <div class="card">
+        <h3>Vitalício</h3>
+        <p>R$399,90 (único)</p>
+        <button onclick="irParaPagamento('Vitalício')" class="btn-laranja">Escolher</button>
+      </div>
+    </div>
+
+    <button onclick="voltarPremium()" class="btn-cancelar">Cancelar</button>
+  </main>
+
+  <script src="../js/premium.js"></script>
+</body>
+</html>
