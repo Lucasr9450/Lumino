@@ -188,8 +188,8 @@ blockquote {
   border-radius: 25px;
   font-size: 1em;
   cursor: pointer;
-  transition: background 0.3s;
 }
+
 .btn-comentario:hover {
   background-color: #e56b00;
 }

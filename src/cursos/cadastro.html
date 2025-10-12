@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumino Acadêmico — Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/cursos.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header>
+        <div class="topo-header">
+          <section class="header-esquerda">
+            <h1 class="slogan">Acenda o seu amanhã</h1>
+          </section>
+      
+          <section class="header-direita">
+            <div class="pesquisar">
+              <input type="text" placeholder="Pesquisar cursos...">
+              🔍
+            </div>
+            <div class="avatar">
+              <div class="mensagem">💬</div>
+              <a href="./perfil.html"><strong>Nome</strong></a>
+            </div>
+          </section>
+        </div>
+
+        <section class="header-centro">
+          <div class="logo-centro">
+            <img src="../assets/Logo.png" alt="Logo Lumino">
+          </div>
+      
+          <nav class="menu">
+            <a href="../../home.html">Home</a>
+            <a href="./selecao.html">Cursos</a>
+            <a href="../../novidades.html">Novidades</a>
+            <a href="../premium/premium.html">Premium</a>
+          </nav>
+        </section>
+      </header>
+
+      <section class="pagina-curso">
+        <div class="cabecalho-curso">
+          <h1 class="nome-curso">Gestão e Automação de Processos Empresariais</h1>
+          <img src="../assets/curso1.webp" alt="Banner do curso" class="banner-curso">
+        </div>
+      
+        <div class="conteudo-curso">
+          <p class="descricao-curso">
+            Este curso aborda os principais conceitos de automação de processos empresariais, com foco em eficiência, tecnologia e gestão estratégica. Inclui tópicos como BPM, RPA, análise de fluxo de trabalho e ferramentas digitais.
+          </p>
+          <p>Cadastre-se no curso para saber mais</p>
+        </div>
+
+        <div class="certificacao-curso">
+            Certificação: Curso oferecido pela Microsoft
+        </div>
+
+        <button id="btn-cadastro" class="btn-cadastro">Cadastrar no curso</button>
+       </section>
+
+      <section class="avaliacoes">
+        <h2>O que dizem nossos alunos</h2>
+      
+        <div class="avaliacao">
+          <div class="perfil">
+          <div class="avatar-avaliacao"></div>
+          <h3>Cliente 1 — <span class="nota">5/5</span></h3>
+        </div>
+          <blockquote>
+            “O Lumino Acadêmico superou minhas expectativas! A plataforma é intuitiva, rápida e os cursos são muito bem estruturados. Consegui me preparar para o curso técnico com facilidade e ainda ganhei um ótimo certificado. Recomendo demais!”
+          </blockquote>
+        </div>
+      
+        <div class="avaliacao">
+          <div class="perfil">
+          <div class="avatar-avaliacao"></div>
+          <h3>Cliente 2 — <span class="nota">4/5</span></h3>
+          </div>
+          <blockquote>
+            “Gostei muito da plataforma! Os conteúdos são de qualidade e os professores explicam muito bem. Só senti falta de mais exercícios práticos em alguns módulos, mas, no geral, a experiência foi excelente.”
+          </blockquote>
+        </div>
+      
+        <button class="btn-comentario">Escrever comentário</button>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <p>Lumino — Acenda o seu amanhã.</p>
+          <div class="footer-socials">
+            <i class="fab fa-instagram icon-instagram"></i>
+            <i class="fab fa-linkedin icon-linkedin"></i>
+            <i class="fab fa-youtube icon-youtube"></i>
+            <i class="fab fa-twitter icon-twitter"></i>
+          </div>
+        </div>
+    
+        <div class="footer-center">
+          <img src="../assets/Logo.png" alt="logo">
+        </div>
+    
+        <div class="footer-right">
+          <ul>
+            <li>Suporte - </li>
+            <li>Central de ajuda</li>
+            <li>Contato</li>
+            <li>Privacidade</li>
+            <li>Termos de uso</li>
+            <li>Sobre nós</li>
+          </ul>
+        </div>
+      </footer>
+    
+      <div class="copyright">
+        <p>©2025 Lumino. Todos os direitos reservados.</p>
+      </div>
+    
+      <script>
+        document.getElementById("btn-cadastro").addEventListener("click", function () {
+          Swal.fire({
+            title: "Inscrição realizada!",
+            text: "Você será redirecionado para a página de cursos.",
+            icon: "success",
+            confirmButtonText: "Continuar"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "curso.html";
+            }
+          });
+        });
+      </script>
+    </body>
+    </html>

@@ -1,104 +1,249 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #f8f7f6;
-    color: #333;
-  }
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff7f0 0%, #ffffff 100%);
+  color: #333;
+}
+
+.header-completo {
+  background-color: #ff7300;
+  color: white;
+  padding: 25px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.linha-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.aluno {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  background: #ddd;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trocar-foto {
+  margin-top: 80px;
+  background-color: white;
+  color: #ff7300;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dados-usuario {
+  flex: 1;                    
+  min-width: 300px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.mensagem {
+  background: white;
+  color: #ff7300;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mensagem:hover {
+  background: #ffe5cc;
+}
+
+.logo-area img {
+  width: 220px;
+  height: auto;
+}
+
+.menu {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
   
-  /* Header */
-  .topo {
-    background-color: #ff7a00;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid #e86c00;
-  }
-  .logo-premium {
-    max-width: 160px;
-    margin-bottom: 10px;
-  }
-  .menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .menu a {
+.painel-progresso {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff3e0;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.painel-progresso h2 {
+  color: #ff7300;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cursos-progresso {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.curso {
+  background-color: #ff7300;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+}
+
+.barra {
+  background-color: rgba(255,255,255,0.3);
+  height: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.barra div {
+  background-color: white;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.btn-continuar {
+  background-color: white;
+  color: #ff7300;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-continuar:hover {
+  background-color: #ffe0cc;
+}
+
+.visao-geral {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dados-aluno {
+  flex: 1;
+  min-width: 250px;
+}
+
+.dados-aluno h3 {
+  color: #ff7300;
+  margin-bottom: 10px;
+}
+
+.botoes-gerais {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-grande {
+  background-color: #ff7300;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-grande:hover {
+  background-color: #e66a00;
+}
+
+  footer {
+    background-color: #333;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10%;
   }
   
-  /* Painel principal */
-  .painel {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  section {
-    margin-bottom: 40px;
-  }
-  h2, h3 {
-    color: #ff7a00;
-  }
-  
-  /* Progresso */
-  .curso {
-    margin: 15px 0;
-  }
-  .barra {
-    background: #ddd;
-    border-radius: 10px;
-    height: 10px;
-    margin: 5px 0 10px;
-  }
-  .barra div {
-    background: #ff7a00;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  /* Botões */
-  .btn-laranja, .btn-cinza {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .btn-laranja {
-    background-color: #ff7a00;
-    color: white;
-  }
-  .btn-laranja:hover {
-    background-color: #e86c00;
-  }
-  .btn-cinza {
-    background-color: #ddd;
-    color: #333;
-  }
-  .btn-cinza:hover {
-    background-color: #bbb;
-  }
-  
-  /* Footer */
-  .rodape {
-    background-color: #ff7a00;
-    color: white;
-    padding: 30px 20px;
+  .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
   }
-  .footer-esquerda,
-  .footer-centro,
-  .footer-direita {
+  
+  .footer-socials {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 10px;
   }
-  .footer-bottom {
-    font-size: 0.85em;
-    margin-top: 10px;
+  
+  .footer-center img {
+    max-width: 155px;
   }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 5px;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8rem;
+    background-color: #222;
+    color: #ccc;
+  }  

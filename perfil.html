@@ -7,79 +7,110 @@
   <link rel="stylesheet" href="./src/css/perfil.css" />
 </head>
 <body class="fade-in">
-  <!-- Header padrão -->
-  <header class="topo">
-    <img src="../assets/Logo.png" alt="Logo Lumino" class="logo-premium" />
+
+  <header class="header-completo">
+    
+    <div class="linha-topo">
+      <div class="aluno">
+        <div class="avatar">
+        <div class="mensagem">
+          💬
+        </div>
+          <button class="trocar-foto">Trocar foto</button>
+        </div>
+  
+        <div class="dados-usuario">
+          <p><strong>Nome:</strong> Nome do Aluno</p>
+          <p><strong>E-mail:</strong> aluno@email.com</p>
+          <p><strong>Está conosco desde:</strong> 00/00/0000</p>
+        </div>
+  
+      </div>
+  
+      <div class="logo-area">
+        <img src="./src/assets/Logo.png" alt="Logo Lumino">
+      </div>
+    </div>
+  
     <nav class="menu">
       <a href="./home.html">Home</a>
+      <a href="./src/cursos/selecao.html">Cursos</a>
       <a href="./novidades.html">Novidades</a>
-      <a href="./premium.html">Premium</a>
+      <a href="./src/premium/premium.html">Premium</a>
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
-  <main class="painel">
-    <section class="usuario">
-      <h2>Olá, Lucas!</h2>
-      <p><strong>Nome:</strong> Lucas</p>
-      <p><strong>E-mail:</strong> lucas@email.com</p>
-      <p><strong>Está conosco desde:</strong> 00/00/0000</p>
-      <button class="btn-cinza">Trocar foto</button>
-    </section>
-
-    <section class="progresso">
-      <h3>Progressão nos Cursos</h3>
+  <section class="painel-progresso">
+    <h2>Progressão nos Cursos</h2>
+  
+    <div class="cursos-progresso">
       <div class="curso">
-        <p>Curso 1 - 75%</p>
+        <p>Curso 1</p>
         <div class="barra"><div style="width: 75%"></div></div>
-        <button class="btn-laranja">Continuar</button>
+        <p>75% concluído</p>
+        <button class="btn-continuar">Continuar</button>
       </div>
+  
       <div class="curso">
-        <p>Curso 2 - 54%</p>
+        <p>Curso 2</p>
         <div class="barra"><div style="width: 54%"></div></div>
-        <button class="btn-laranja">Continuar</button>
+        <p>54% concluído</p>
+        <button class="btn-continuar">Continuar</button>
       </div>
+  
       <div class="curso">
-        <p>Curso 3 - 65%</p>
+        <p>Curso 3</p>
         <div class="barra"><div style="width: 65%"></div></div>
-        <button class="btn-laranja">Continuar</button>
-      </div>
-    </section>
-
-    <section class="visao-geral">
-      <h3>Visão geral do aluno</h3>
-      <p><strong>Horas de estudo:</strong> 120h</p>
-      <p><strong>Cursos/atividades feitas:</strong> 18</p>
-      <p><strong>Principais dificuldades:</strong> Matemática, Gestão de tempo</p>
-      <button class="btn-laranja">Certificados</button>
-    </section>
-
-    <section class="calendario">
-      <h3>Calendário de lições</h3>
-      <p>Em breve: integração com seu plano de estudos.</p>
-    </section>
-  </main>
-
-  <!-- Footer padrão -->
-  <footer class="rodape">
-    <div class="footer-esquerda">
-      <p>Slogan</p>
-      <div class="redes-sociais">
-        <!-- ícones sociais -->
+        <p>65% concluído</p>
+        <button class="btn-continuar">Continuar</button>
       </div>
     </div>
-    <div class="footer-centro">
-      <p>Lumino Acadêmico</p>
+  
+    <div class="visao-geral">
+      <div class="dados-aluno">
+        <h3>Visão geral do aluno</h3>
+        <p>Horas de estudo: 00h</p>
+        <p>Cursos/atividades feitas: 0</p>
+        <p>Principais dificuldades: Nenhuma registrada</p>
+      </div>
+  
+      <div class="botoes-gerais">
+        <button class="btn-grande">Certificados</button>
+        <button class="btn-grande">Calendário de lições, etc.</button>
+      </div>
     </div>
-    <div class="footer-direita">
-      <a href="#">Suporte</a>
-      <a href="#">Contato</a>
-      <a href="#">Política de uso</a>
-      <a href="#">Sobre nós</a>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      <p>Lumino — Acenda o seu amanhã.</p>
+      <div class="footer-socials">
+        <i class="fab fa-instagram icon-instagram"></i>
+        <i class="fab fa-linkedin icon-linkedin"></i>
+        <i class="fab fa-youtube icon-youtube"></i>
+        <i class="fab fa-twitter icon-twitter"></i>
+      </div>
     </div>
-    <div class="footer-bottom">
-      <p>©2025 Lumino. Todos os direitos reservados.</p>
+
+    <div class="footer-center">
+      <img src="./src/assets/Logo.png" alt="logo">
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li>Suporte - </li>
+        <li>Central de ajuda</li>
+        <li>Contato</li>
+        <li>Privacidade</li>
+        <li>Termos de uso</li>
+        <li>Sobre nós</li>
+      </ul>
     </div>
   </footer>
+
+  <div class="copyright">
+    <p>©2025 Lumino. Todos os direitos reservados.</p>
+  </div>
+
 </body>
 </html>

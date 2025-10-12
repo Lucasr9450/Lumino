@@ -29,7 +29,7 @@ const carrosselItems = [
     }
 ];
 let i = 0;
-const tempo = 5000; 
+const tempo = 4000; 
 const carrosselElement = document.querySelector('.carrossel');
 const carrosselTitulo = document.querySelector('.carrossel-titulo');
 function slideShow() {

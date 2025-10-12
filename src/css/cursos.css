@@ -159,7 +159,6 @@ header {
     font-size: 1.1rem;
   }
   
-  /* Botão estilizado */
   .btn-curso {
     background-color: white;
     color: #ff7a00;
@@ -174,7 +173,6 @@ header {
     background-color: #ffe0c2;
   }
   
-  /* Barra de progresso */
   .progresso {
     margin: 10px 0;
     color: white;
@@ -243,3 +241,244 @@ header {
     background-color: #222;
     color: #ccc;
   }  
+
+  .avaliacoes {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .avaliacoes h2 {
+    font-size: 1.8em;
+    color: #ff7a00;
+    margin-bottom: 25px;
+  }
+  .avaliacao {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    border-left: 5px solid #ff7a00;
+    transition: transform 0.2s ease;
+  }
+  .avaliacao:hover {
+    transform: translateY(-3px);
+  }
+  .perfil{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .avatar-avaliacao{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 15px;
+  }
+  .avaliacao h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .avaliacao .nota {
+    color: #ff7a00;
+    font-weight: bold;
+  }
+  blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .btn-comentario {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .btn-comentario:hover {
+    background-color: #e56b00;
+  }
+
+  .pagina-curso {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .cabecalho-curso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nome-curso {
+    font-size: 1.8rem;
+    color: #ff7a00;
+    flex: 1;
+  }
+  
+  .banner-curso {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .conteudo-curso {
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .descricao-curso {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .certificacao-curso {
+    position: absolute;
+    right: 260px;
+    bottom:-25px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  .btn-cadastro {
+    margin-top: 40px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .painel-curso {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .nome-curso {
+    font-size: 2rem;
+    color: #ff7a00;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .progresso-curso {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .barra-progresso {
+    background-color: rgba(255, 122, 0, 0.3);
+    height: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px auto;
+    max-width: 400px;
+  }
+  
+  .barra-preenchida {
+    background-color: #ff7a00;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .titulo-conteudo {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .materias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .materia {
+    background-color: #ff7a00;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .materia a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .bloqueado {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    border: 2px dashed #999;
+  }
+  .tela-materia {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .titulo-materia {
+    font-size: 2rem;
+    color: #ff7a00;
+    margin-bottom: 30px;
+  }
+  
+  .opcoes-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .btn-conteudo {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-conteudo:hover {
+    background-color: #e66a00;
+  }
