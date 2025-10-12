@@ -52,6 +52,14 @@ body {
     height: 100px;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .avatar a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: -5px;
   }
   
   .mensagem {
@@ -71,7 +79,7 @@ body {
   .mensagem:hover {
     background: #ffe5cc;
   }
-  
+
   .header-centro {
     display: flex;
     flex-direction: column;
@@ -118,12 +126,15 @@ body {
   }
   .cursos button {
     background: #ff7300;
-    color: white;
     border: none;
     border-radius: 20px;
     padding: 6px 12px;
     cursor: pointer;
     margin-left: 10px;
+  }
+  .cursos a{
+    text-decoration: none;
+    color: white;
   }
   
   .calendar {

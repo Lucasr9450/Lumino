@@ -1,30 +1,30 @@
 const carrosselItems = [
     {
-        image: './src/assets/curso1.jpg',
+        image: '../../src/assets/curso1.webp',
         title: 'Gestão e Automação de Processos Empresariais',
     },
     {
-        image: './src/assets/curso2.webp',
+        image: '../../src/assets/curso2.webp',
         title: 'Inteligência Artificial Aplicada ao Trabalho',
     },
     {
-        image: './src/assets/curso3.jpg',
+        image: '../../src/assets/curso3.webp',
         title: 'Análise de Dados e Inteligência Empresarial',
     },
     {
-        image: './src/assets/curso4.webp',
+        image: '../../src/assets/curso4.webp',
         title: 'Desenvolvimento e Suporte de Sistemas',
     },
     {
-        image: './src/assets/curso5.jpg',
+        image: '../../src/assets/curso5.webp',
         title: 'Cibersegurança e Proteção de Dados',
     },
     {
-        image: './src/assets/curso6.jpg',
+        image: '../../src/assets/curso6.webp',
         title: 'Automação Industrial e Indústria 4.0',
     },
     {
-        image: './src/assets/curso7.jpg',
+        image: '../../src/assets/curso7.webp',
         title: 'Marketing Digital e Estratégia de Vendas Online',
     }
 ];

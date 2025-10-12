@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f7f6;
+    color: #333;
+  }
+  
+  /* Header */
+  .topo {
+    background-color: #ff7a00;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #e86c00;
+  }
+  .logo-premium {
+    max-width: 160px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Painel principal */
+  .painel {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2, h3 {
+    color: #ff7a00;
+  }
+  
+  /* Progresso */
+  .curso {
+    margin: 15px 0;
+  }
+  .barra {
+    background: #ddd;
+    border-radius: 10px;
+    height: 10px;
+    margin: 5px 0 10px;
+  }
+  .barra div {
+    background: #ff7a00;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Botões */
+  .btn-laranja, .btn-cinza {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-laranja {
+    background-color: #ff7a00;
+    color: white;
+  }
+  .btn-laranja:hover {
+    background-color: #e86c00;
+  }
+  .btn-cinza {
+    background-color: #ddd;
+    color: #333;
+  }
+  .btn-cinza:hover {
+    background-color: #bbb;
+  }
+  
+  /* Footer */
+  .rodape {
+    background-color: #ff7a00;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-esquerda,
+  .footer-centro,
+  .footer-direita {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .footer-bottom {
+    font-size: 0.85em;
+    margin-top: 10px;
+  }
