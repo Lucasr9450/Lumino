@@ -24,7 +24,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
+  padding: 50px 10%;
   flex-wrap: wrap;
 }
 .intro-content {
@@ -68,29 +68,74 @@ header img {
   width: 300px;
   animation: float 3s ease-in-out infinite;
 }
-
-.carrossel {
+.cursos-destaque {
+  padding: 60px 40px;
   text-align: center;
-  height: 612px; 
-  font-size: 1.2rem;
-  border-radius: 20px;
-  margin: 60px auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 920px;
 }
 
-.carrossel-titulo{
-  background-color: #ff6b00;       
-  color: white;                    
-  padding: 20px 40px;            
-  border-radius: 12px;        
-  font-size: 2rem;                
-  font-weight: bold;              
-  text-align: center;            
-  max-width: 700px;              
-  margin: 80px auto;
+.titulo-cursos {
+  font-size: 2rem;
+  color: #ff7300;
+  margin-bottom: 40px;
+}
+
+.grade-cursos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-curso {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-curso:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-curso {
+  background-color: #ff7300;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-curso h3 {
+  color: #ff7300;
+  margin-bottom: 10px;
+}
+
+.card-curso p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.card-curso button {
+  background-color: #ff7300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-curso button:hover {
+  background-color: #e66a00;
 }
 
 .info {
@@ -245,4 +290,184 @@ footer li {
   font-size: 0.8rem;
   background-color: #222;
   color: #ccc;
+}
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .intro-content {
+    max-width: 100%;
+  }
+
+  .intro-image img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .grade-cursos {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card-curso {
+    width: 240px;
+  }
+
+  .info {
+    padding: 40px 15px;
+  }
+
+  .avaliacoes {
+    padding: 20px;
+  }
+
+  .avaliacao {
+    padding: 15px;
+  }
+
+  .perfil {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 5%;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-right {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-right ul {
+    text-align: center;
+  }
+
+  .footer-center img {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    max-width: 90%;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .btn-cadastrar {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .card-curso {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .btn-comentario {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .footer-left p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-right ul {
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .footer-right li {
+    margin-bottom: 8px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+  }
+
+  .card-curso h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-curso p {
+    font-size: 0.85rem;
+  }
+
+  .btn-cadastrar,
+  .btn-comentario,
+  .card-curso button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .titulo-cursos,
+  .titulo-sobre,
+  .titulo-historia,
+  .avaliacoes h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials i {
+    font-size: 1.2rem;
+  }
+
+  .footer-center img {
+    max-width: 100px;
+  }
+
+  .footer-right ul {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
 }

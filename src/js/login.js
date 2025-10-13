@@ -121,3 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  function alertCadastro() {
+    Swal.fire({
+      title: 'Atenção!',
+      text: 'Cadastre-se para acessar o curso.',
+      icon: 'info',
+      confirmButtonText: 'Ok',
+      confirmButtonColor: '#ff7300'
+    });
+  }

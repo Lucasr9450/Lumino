@@ -315,3 +315,219 @@ body {
     background-color: #222;
     color: #ccc;
   }  
+
+  @media (max-width: 1024px) {
+    .topo-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-direita {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo-centro img {
+      margin-top: 0;
+    }
+  
+    .menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.95rem;
+    }
+  
+    .conteudo {
+      grid-template-columns: 1fr;
+      padding: 30px 20px;
+    }
+  
+    .info {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+  
+    .info-dupla {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .motivacional {
+      margin: 20px;
+    }
+  
+    footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 30px 5%;
+      gap: 30px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer-right ul {
+      text-align: center;
+    }
+  
+    .footer-center img {
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 20px;
+    }
+  
+    .header-esquerda .slogan {
+      font-size: 18px;
+    }
+  
+    .avatar {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .mensagem {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .pesquisar input {
+      font-size: 13px;
+    }
+
+    .menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.95rem;
+    }
+  
+    .calendar-header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .calendar-header button {
+      width: 100%;
+    }
+  
+    .btn-premium,
+    .cursos button {
+      width: 100%;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+  
+    .raposa-area img {
+      width: 140px;
+    }
+  
+    footer-left p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .footer-socials {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .footer-right ul {
+      padding: 0;
+      font-size: 0.95rem;
+    }
+  
+    .footer-right li {
+      margin-bottom: 8px;
+    }
+  
+    .copyright {
+      font-size: 0.75rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-esquerda .slogan {
+      font-size: 16px;
+    }
+  
+    .pesquisar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .pesquisar input {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.9rem;
+    }
+  
+    .btn-premium,
+    .cursos button {
+      font-size: 0.9rem;
+      padding: 10px 16px;
+    }
+  
+    .calendar td {
+      padding: 8px;
+    }
+  
+    .info-box h3 {
+      font-size: 1.1rem;
+    }
+  
+    .footer-left,
+  .footer-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials i {
+    font-size: 1.2rem;
+  }
+
+  .footer-center img {
+    max-width: 100px;
+  }
+
+  .footer-right ul {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+}

@@ -267,3 +267,228 @@ body {
     background-color: #222;
     color: #ccc;
   }  
+  @media (max-width: 1024px) {
+    .linha-topo,
+    .aluno,
+    .visao-geral {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .logo {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    .menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.95rem;
+    }
+  
+    .painel-progresso {
+      padding: 15px;
+    }
+  
+    .cursos-progresso {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .curso {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .dados-aluno {
+      text-align: center;
+    }
+  
+    .botoes-gerais {
+      align-items: center;
+    }
+  
+    footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 30px 5%;
+      gap: 30px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer-right ul {
+      text-align: center;
+    }
+  
+    .footer-center img {
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-completo {
+      padding: 20px;
+    }
+
+    .menu {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.95rem;
+    }
+  
+    .slogan {
+      font-size: 1rem;
+    }
+  
+    .avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .mensagem {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .trocar-foto {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .painel-progresso h2 {
+      font-size: 1.5rem;
+    }
+  
+    .curso {
+      padding: 15px;
+    }
+  
+    .btn-continuar {
+      width: 100%;
+      font-size: 0.95rem;
+    }
+  
+    .btn-grande {
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 14px 20px;
+    }
+  
+    footer-left p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .footer-socials {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .footer-right ul {
+      padding: 0;
+      font-size: 0.95rem;
+    }
+  
+    .footer-right li {
+      margin-bottom: 8px;
+    }
+  
+    .copyright {
+      font-size: 0.75rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slogan {
+      font-size: 0.95rem;
+    }
+  
+    .avatar {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .mensagem {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu a {
+      font-size: 0.9rem;
+    }
+  
+  
+    .trocar-foto {
+      font-size: 0.85rem;
+    }
+  
+    .painel-progresso h2 {
+      font-size: 1.3rem;
+    }
+  
+    .curso {
+      font-size: 0.95rem;
+    }
+  
+    .btn-continuar,
+    .btn-grande {
+      font-size: 0.9rem;
+      padding: 10px 16px;
+    }
+  
+    .footer-left,
+  .footer-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials i {
+    font-size: 1.2rem;
+  }
+
+  .footer-center img {
+    max-width: 100px;
+  }
+
+  .footer-right ul {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+}
