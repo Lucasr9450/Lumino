@@ -131,6 +131,10 @@ body {
     padding: 6px 12px;
     cursor: pointer;
     margin-left: 10px;
+    transition: 0.3s ease;
+  }
+  .cursos button:hover{
+    background-color: #e66a00;
   }
   .cursos a{
     text-decoration: none;
@@ -212,6 +216,10 @@ body {
     text-decoration: none; 
     display: inline-block;
     font-weight: bold;
+    transition: 0.3s ease;
+  }
+  .btn-premium:hover{
+    background-color: #e66a00;
   }
   
   .motivacional {

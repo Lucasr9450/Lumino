@@ -27,35 +27,24 @@ body {
   flex-wrap: wrap;
 }
 
-.avatar {
-  background: #ddd;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.avatar-mensagem {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  background: #ddd;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   gap: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-.trocar-foto {
-  margin-top: 80px;
-  background-color: white;
-  color: #ff7300;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.dados-usuario {
-  flex: 1;                    
-  min-width: 300px;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-.mensagem {
+.mensagem { 
   background: white;
   color: #ff7300;
   border-radius: 50%;
@@ -70,12 +59,39 @@ body {
 }
 
 .mensagem:hover {
-  background: #ffe5cc;
+  background-color: #ffe5cc;
 }
 
-.logo-area img {
-  width: 220px;
-  height: auto;
+.trocar-foto {
+  background-color: white;
+  color: #ff7300;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.trocar-foto:hover {
+  background-color: #ffe5cc;
+}
+
+.dados-usuario p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.logo{
+  max-width: 180px;
+  margin-top: -10px;
+  margin-left: -190px;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .menu {
@@ -146,7 +162,6 @@ body {
 
 .btn-continuar {
   background-color: white;
-  color: #ff7300;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
@@ -157,6 +172,11 @@ body {
 
 .btn-continuar:hover {
   background-color: #ffe0cc;
+}
+
+.btn-continuar a{
+  text-decoration: none;
+  color: #ff7300;
 }
 
 .visao-geral {

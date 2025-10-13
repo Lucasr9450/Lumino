@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 const carrosselItems = [
     {
         image: '../../src/assets/curso1.webp',
@@ -42,3 +43,4 @@ function slideShow() {
     setTimeout(slideShow, tempo);
 }
 slideShow();
+});
