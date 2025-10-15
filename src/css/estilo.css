@@ -66,10 +66,10 @@ header img {
   font-weight: 600;
 }
 .intro-image img {
-  width: 500px;
-  animation: float 3s ease-in-out infinite;
+  width: 300px;
 }
 .cursos-destaque {
+  margin-top: -100px;
   padding: 60px 40px;
   text-align: center;
 }
