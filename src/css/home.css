@@ -232,17 +232,89 @@ body {
     margin: 20px 40px;
   }
   
-  .raposa-area {
+  .lumi-assistente {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 16px;
+    flex-wrap: wrap;
   }
   
-  .raposa-area img {
-    width: 180px;
+  .lumi-assistente img {
+    width: 200px;
     height: auto;
+    border-radius: 12px;
   }
   
+  .lumi-balao {
+    background-color: #ff7300;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    max-width: 300px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .lumi-balao::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #ff7300;
+  }
+  
+  .lumi-chat {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .mensagem-lumi {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .lumi-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .lumi-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .lumi-input button {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #lumiRespostas .resposta {
+    background-color: #ff7300;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
   .info-dupla {
     display: flex;
     justify-content: space-between;

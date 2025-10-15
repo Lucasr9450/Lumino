@@ -156,6 +156,11 @@ header {
     justify-content: space-between;
     overflow: hidden;
   }
+
+  .bloq{
+    background-color: #666;
+    cursor: not-allowed;
+  }
   
   .curso img {
     width: 100%;

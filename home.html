@@ -77,19 +77,35 @@
   <section class="info-dupla">
 
     <div class="coluna-esquerda">
-      <div class="info-box">
+
+      <section class="info-box">
         <h3>Assinatura Premium</h3>
         <p>Conheça nossos benefícios exclusivos e impulsione seus estudos com planos acessíveis!</p>
         <a href="./src/premium/premium.html" class="btn-premium">Saiba Mais</a>
-      </div>
+      </section>
   
-      <div class="motivacional">
+      <section class="motivacional">
         Você está com uma sequência de <strong>15 dias seguidos</strong> de aprendizado! Continue assim! 🔥
-      </div>
-  
-      <div class="raposa-area">
-        <img src="./src/assets/soninho.png" alt="Raposa Lumino">
-      </div>
+      </section>
+
+      <section class="lumi-assistente">
+          <img src="./src/assets/raposa2.png" alt="Imagem da Lumi">
+        <div class="lumi-balao" onclick="abrirSimuladorLumi()">
+          <p>💬 Caso tenha alguma dúvida, clique aqui para acessar nossa inteligência artificial, a <strong>Lumi</strong>.</p>
+        </div>
+      
+        <div class="lumi-chat" id="lumiChat">
+          <div class="mensagem-lumi">
+            <p>👋 Oi! Como posso te ajudar?</p>
+          </div>
+          <div class="lumi-input">
+            <input type="text" id="lumiPergunta" placeholder="Digite sua dúvida...">
+            <button onclick="responderLumi()">Enviar</button>
+          </div>
+          <div id="lumiRespostas"></div>
+        </div>
+      </section>
+
     </div>
   
     <div class="coluna-direita">
@@ -155,5 +171,6 @@
     <p>©2025 Lumino. Todos os direitos reservados.</p>
   </div>
 
+  <script src="./src/js/lumi.js"></script>
 </body>
 </html>
